@@ -583,12 +583,9 @@ button{
         width: 100%;
     }
 
-    .logo2{
 
-        display: block;
-        grid-area: logo2;
 
-    }
+  
     .caja_Formulario{
 
         font-size: 15px;
@@ -757,10 +754,51 @@ button{
         transition: all 0.5s ease-in-out;
         
     }
+
+      /*----------------------------- animacionnn--------------------- */
+      .logo2{
+
+        display: block;
+        grid-area: logo2;
+
+        animation-name: movimiento-logo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+
+
+    }
+
+      @keyframes movimiento-logo {
+
+          0%{
+            transform:translate(40px)
+            
+          }
+
+          25%{
+           
+            transform: scale(1.1);
+
+          }
+
+          50%{
+
+            transform: translateZ(40px);
+
+          }
+
+          75%{
+            transform: rotateY(360deg);
+
+          }
+
+
+      }
     
  
 
-    /* partes hover */
+    /*-------------------------- partes hover ----------------*/
     
  
     .cajaJordan1:hover,.mas_vendidos_fotos:hover{
