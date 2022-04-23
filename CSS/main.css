@@ -728,13 +728,14 @@ button{
 
         /* footer agregadoo */
 
-        .nav_cont {
+        .nav_secu{
 
-            /* display: flex;
+            display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
-             */
+            justify-content: space-evenly;
         }
+
+
     
     
 
