@@ -1,0 +1,737 @@
+* {
+    padding: 0; /*HACER ESTO SIEMPRE POR QUE ES RECOMENDABLE*/
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{
+
+    color: brown;
+}
+.contenedorPadreSupremo{
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: grid;
+
+    grid-template-areas:
+    "navPrincipal"
+    "header"
+    "segundo_menu"
+    "main"
+    "nav_secu";
+  
+    color: rgb(236, 214, 185);
+    font-style: italic;
+   width: 100%;
+}
+
+.navPrincipal{
+
+    grid-area: navPrincipal;
+    font-size: medium;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo2{
+
+    display: none;
+}
+
+
+
+
+.header{
+
+    grid-area: header;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    background-repeat: repeat;
+    padding: 30px;
+    font-size: small;
+
+
+}
+
+
+.main{
+
+    grid-area: main;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    font-size: larger;
+    color: rgb(236, 214, 185);
+    text-align: center;
+
+
+}
+/*--------estilos de mi segundo menu-----------*/
+
+.segundo_menu{
+
+    grid-area: segundo_menu;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+  
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.segundo_menu img{
+
+    display: none;
+}
+
+button{
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+   
+    font-size: 10px;
+    height: auto;
+    width: 50px;
+
+
+}
+
+
+
+/* ----------------------fin--------------------------- */
+
+.nav_secu {
+
+    grid-area: nav_secu ;
+}
+
+
+/*---------------- Estilos al main----------------------------*/
+
+/*---------------estilo a la seccion Mas Vendido--------------*/
+
+
+
+.mas_vendido {
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+.titulos_MainPrincipal{
+
+    margin-top: 20px;
+}
+
+
+
+.mas_vendidos_fotos{
+
+    
+    margin-top: 40PX;
+
+     width: 300px;
+    border-radius: 10px;
+    border: solid black 5px;
+
+   font-weight: bold;
+
+ 
+ 
+}
+
+
+
+
+
+.titulos_MainPrincipal{
+
+    text-align: center;
+    color: brown;
+
+}
+
+/* color de los precios */
+.precios{
+
+    color: greenyellow;
+}
+
+
+/*--------------estilo a la seccion Sneakers-------------*/
+
+.sneakers{
+
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+  
+
+}
+
+
+.tabla__sneakers{
+
+ 
+   
+    width: 250px;
+    
+}
+
+
+/*--------------estilo a la seccion Gorras-------------*/
+
+.gorras{
+
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+
+
+}
+.table__gorras{
+    text-align: center;
+   width: 250px;
+
+}
+
+
+
+/*--------------------navegador-----------------------------------*/
+.navPrincipal{
+  
+    width: 100%;
+  
+    background-color: black;
+    padding: 5px;
+    
+    
+}
+.navPrincipal__ul li{
+ 
+  
+    display: inline-block;
+
+   
+}
+.navPrincipal__ul li a{
+
+    color: brown;
+    
+    margin: 5px;
+    text-decoration: none;
+}
+
+.navPrincipal__ul li a:hover{
+    background-color: rgb(236, 214, 185);
+}
+.navPrincipal__ul{
+   
+
+    display: inline;
+
+}
+.navPrincipal_buscar{
+
+    display: inline;
+  
+  
+}
+.navPrincipal_buscar_espacioBusqueda{
+    border-radius: 50px;
+    width: 100%;
+    padding: 2px;
+}
+/*-------------este son los estilos de la seccion FOOTER---------------------*/
+.nav_secu{
+    
+   
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo.png");
+    background-repeat: repeat;
+    border: solid  rgb(0, 0, 0) 5px ;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.nav_secu ul li a{
+    color: greenyellow;
+
+
+
+}
+.nav_secu ul li{
+    background-color: #000;
+
+
+}
+
+
+.nav_cont {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/*---------------FIN estilo a la seccion Mas Vendido--------------*/
+
+
+
+
+
+/*-----------------aca empieza la Pagina de Sneakers--------------------*/
+
+
+
+.seccion_Jordan{
+
+    display: flex;
+    flex-flow: column wrap;
+  
+    align-items: center;
+
+}
+.portada{
+    display: none;
+
+}
+
+.otrasMarcas{
+
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.cajaJordan1{
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+.otrasImagZapatilla{
+
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+
+
+
+
+
+
+/*-----------------aca TERMINA la Pagina de Sneakers--------------------*/
+
+
+
+
+
+
+/*-----------------parte de la Pagina Mejor del verano-------------------*/
+.cajaPrincipalmodelosVerano{
+
+ 
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+  
+
+
+
+}
+.VeranoModelos{
+    
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    border: solid black 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+ 
+}
+
+
+.caja_Formulario{ /*sirve tanto para verano como para la de invierno*/
+
+    margin-top: 40px;
+  text-align: center;
+  color: greenyellow;
+  background-color: rgb(0, 0, 0);
+
+}
+
+/*-----------------parte de la Pagina Mejor del Invierno-------------------*/
+
+
+.cajaPrincipalmodelosInvierno{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+.contenedor__ModelosInvierno{
+
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+
+}
+
+
+/*-----------------parte de la Pagina de la info-------------------*/
+.textoAYUDA{
+    background-color: aliceblue;
+    color: #000;
+
+    font-size: 25px;
+ 
+    font-weight: bold;
+ 
+}
+
+
+/* -------------------------------------media queris--------------------------------------------------------- */
+
+
+@media screen and (min-width:425px) {
+
+
+
+    .segundo_menu h3{
+
+       margin-right: 30px;
+
+    }
+
+    button{
+  
+        border-radius: 0;
+        font-size: 10px;
+        height: 20px;
+        width: 100%;
+    
+    
+    }
+    .cajaPrincipalmodelosVerano{
+
+        flex-flow: column wrap;
+    
+        align-items:center ;
+    }
+    .cajaPrincipalmodelosInvierno{
+    
+        flex-flow: column wrap;
+
+    }
+
+
+    
+
+
+/* --------------------------------ACA VA LAS MEDIA CUERIS DE LA tablet ---------------------------------------*/
+
+@media screen and (min-width:768px) {
+    
+
+    .contenedorPadreSupremo{
+
+    
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "header header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+        
+       
+    }
+
+    
+    .header{
+
+        font-size: large;
+
+    }
+
+
+    .segundo_menu{
+
+        flex-direction: column;
+        justify-content: start;
+        border-right: solid #000;
+        background-image: url(../imag/menu/fondo.png);
+
+    }
+    .segundo_menu button{
+        margin: 20px 0px 20px 0px;
+
+
+    }
+
+
+    .segundo_menu h3{
+
+        font-size: 50px;
+
+    }
+    .navPrincipal__ul li a{
+
+ 
+        font-size:xx-large;
+
+    }
+
+
+    button{
+
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+       color: bisque;
+       border-radius: 0;
+       font-size: 20px;
+        height: 25px;
+        width: 100%;
+    
+    
+    }
+
+    .mas_vendidos_fotos{
+
+        width: 350px;
+   }
+
+
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+    .cajaPrincipalmodelosVerano{
+        align-items: center;
+    }
+    .caja_Formulario{
+
+        font-size: 30px;
+
+    }
+
+    /* navegador tablet */
+    .navPrincipal{
+        
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        background-color: antiquewhite;
+        
+    }
+    .navPrincipal_buscar_espacioBusqueda{
+        border-radius: 0;
+
+        padding: 2px;
+    }
+
+}
+
+
+}
+
+
+
+/* ACA VA LA PARTE DE LA COMPU QUE VA ATENER UN LOGO EN EL HEAD */
+
+@media screen and (min-width:1024px) {
+
+    .contenedorPadreSupremo{
+
+    
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "logo2 header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+
+    }
+
+    button{
+
+        border-radius: 0;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .logo2{
+
+        display: block;
+        grid-area: logo2;
+
+    }
+    .caja_Formulario{
+
+        font-size: 15px;
+
+    }
+ 
+    .mas_vendido {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .mas_vendidos_fotos{
+
+         width: 400px;
+     
+    }
+
+    .navPrincipal{
+        flex-direction: row;
+       align-items: center;
+       background: rgb(0,0,0);
+       background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+          
+     }
+
+    .navPrincipal_buscar{
+        border-radius: 0;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .navPrincipal__ul li a{
+        font-size: 30px;
+    }
+    /*--------------estilo a la seccion Sneakers-------------*/
+
+    .sneakers{
+
+        flex-flow: wrap row;
+        justify-content: space-around;
+
+    }
+
+    .sneakers img{
+
+        width:360px;
+        height:460px;
+    }
+
+
+
+
+
+    /*--------------estilo a la seccion Gorras-------------*/
+
+    .gorras{
+
+        flex-flow: wrap row;
+    
+        justify-content: space-around;
+
+    }
+    .gorras img{
+
+        width:380px;
+        height:360px;
+    }
+
+
+    /* ------------------------------pagina SNEAKERS-----------------------------*/
+
+
+    .header{
+
+        font-size: xx-large;
+
+    }
+
+    .seccion_Jordan{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    
+    }
+    .otrasMarcas{
+    flex-flow: row wrap;
+      justify-content: space-evenly;
+    
+    }
+    /* portada del la pagina de sneakers */
+    .portada{
+        display: block;
+        
+        margin-top: 40px;
+
+        border: solid black 5px;
+    
+    }
+
+
+
+        /*-----------------parte de la Pagina Mejor del verano-------------------*/
+        .cajaPrincipalmodelosVerano{
+
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        
+    
+        }
+    
+        .cajaPrincipalmodelosInvierno{
+    
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+    
+    
+        }
+    
+    
+
+
+    /* partes hover */
+    .cajaJordan1:hover,.mas_vendidos_fotos:hover,.portada:hover{
+
+        border-color: chartreuse;
+    }
+
+    .otrasImagZapatilla:hover{
+    
+        border-color: chartreuse;
+    }
+    .VeranoModelos:hover{
+
+        border-color: chartreuse;
+    }
+    .contenedor__ModelosInvierno:hover{
+
+        border-color: chartreuse;
+
+    }
+
+
+
+}
