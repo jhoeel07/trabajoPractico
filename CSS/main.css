@@ -267,6 +267,10 @@ button{
     border: solid  rgb(0, 0, 0) 5px ;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
   
 
 }
@@ -278,6 +282,8 @@ button{
 
 
 }
+
+
 .nav_cont{
     list-style: none;
 
