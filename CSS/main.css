@@ -267,27 +267,25 @@ button{
     border: solid  rgb(0, 0, 0) 5px ;
     border-radius: 10px;
     overflow: hidden;
+  
 
 }
 .nav_secu ul li a{
     color: greenyellow;
+    text-decoration: none;
 
-
-
-}
-.nav_secu ul li{
-    background-color: #000;
+    
 
 
 }
+.nav_cont{
+    list-style: none;
 
-
-.nav_cont {
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
 }
+
+
+
+
 /*---------------FIN estilo a la seccion Mas Vendido--------------*/
 
 
@@ -727,11 +725,20 @@ button{
     
     
         }
+
+        /* footer agregadoo */
+
+        .nav_cont {
+
+            /* display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+             */
+        }
     
     
 
-
-        /*  */
+        /* transisiones  */
 
     .contenedor__ModelosInvierno{
         transition: all 0.5s ease-in-out;
@@ -749,8 +756,12 @@ button{
         transition: all 0.5s ease-in-out;
         
     }
+    
+ 
 
     /* partes hover */
+    
+ 
     .cajaJordan1:hover,.mas_vendidos_fotos:hover{
 
         border-color: chartreuse;
