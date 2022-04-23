@@ -685,10 +685,28 @@ button{
         display: block;
         
         margin-top: 40px;
-
-        border: solid black 5px;
     
     }
+
+    .cajaJordan1{
+
+        transition: all 0.5s ease-in-out;
+    }
+    .portada img{
+
+        transition: all 1s ease-in-out;
+    }
+
+
+
+    .portada img:hover{
+
+        transform: rotate(360deg);
+
+
+    }
+
+
 
 
 
@@ -697,6 +715,7 @@ button{
 
             flex-flow: row wrap;
             justify-content: space-evenly;
+          
         
     
         }
@@ -712,23 +731,46 @@ button{
     
 
 
+        /*  */
+
+    .contenedor__ModelosInvierno{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .VeranoModelos{
+
+        transition: all 0.5s ease-in-out;
+    }
+    .otrasImagZapatilla{
+
+        transition: all 0.5s ease-in-out;
+    }
+    .mas_vendidos_fotos{
+        transition: all 0.5s ease-in-out;
+        
+    }
+
     /* partes hover */
-    .cajaJordan1:hover,.mas_vendidos_fotos:hover,.portada:hover{
+    .cajaJordan1:hover,.mas_vendidos_fotos:hover{
 
         border-color: chartreuse;
+        transform: scale(1.1);
     }
 
     .otrasImagZapatilla:hover{
     
         border-color: chartreuse;
+        transform: scale(1.1);
     }
     .VeranoModelos:hover{
 
         border-color: chartreuse;
+        transform: scale(1.1);
     }
     .contenedor__ModelosInvierno:hover{
 
         border-color: chartreuse;
+        transform: scale(1.1);
 
     }
 
