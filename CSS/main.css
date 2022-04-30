@@ -772,28 +772,15 @@ button{
       @keyframes movimiento-logo {
 
           0%{
-            transform:translate(40px)
-            
+
+            border-color: yellow;
           }
 
           25%{
-           
+
             transform: scale(1.1);
 
           }
-
-          50%{
-
-            transform: translateZ(40px);
-
-          }
-
-          75%{
-            transform: rotateY(360deg);
-
-          }
-
-
       }
     
  
